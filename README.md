@@ -1,1 +1,2 @@
-# Deep_fake_Video_classification
+This project classifies video frames as real or fake using a ResNet18 transfer-learning model. First run `extract_frames.py` to sample frames from videos in `frames/` into `extracted_frames/`. Then train the classifier with `python train_model.py`, which saves weights to `model/trained_model.pth` and a class mapping to `model/class_to_idx.json`. To predict on a single image, run `python predict_frame.py --image path/to/image.jpg` to print the predicted class and confidence. Requires Python 3.8+, PyTorch, torchvision, OpenCV, and NumPy.
+
